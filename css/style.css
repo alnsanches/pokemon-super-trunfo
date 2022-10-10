@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 400px;
+    background-image: url(../images/background.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 20vh;
+    font-family: 'Roboto', sans-serif;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.logo {
+    width: 150px;
+    margin-top: -20px;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.page-title {
+    margin: 5px 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    color: #000;
+}
+
+button, .button-jogar {
+    padding: 0.8rem 1.5rem;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+h2 {
+    color: #000;
+
+}
+
+#carta-jogador, #carta-maquina {
+    width: 380px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+}
+
+#carta-jogador h3 {
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}
+
+.resultado-final {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 6px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.--spacing {
+    margin-left: 4.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper { /*distancia entre as cartas */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carta-subtitle { /*nome do pokemon na carta */
+    z-index: 2;
+    position: absolute;
+    top: 32px;
+    left: 42px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#cartas {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* atributos da carta do computador */
+.carta-status p {
+    margin-bottom: 1px;
+    margin-top: 25px;
+}
